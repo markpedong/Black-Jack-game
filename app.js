@@ -32,7 +32,7 @@ function getRandomCard(){
     }
 }  
 
-123
+
 function renderGame() {
     cardsEl.textContent = `${"Cards: "}`
     for (let i = 0; i < cards.length; i++) {
