@@ -1,16 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  text-align: center;
+  background-image: url(./backGround.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .container {
-  background-color: #000000;
-  width: 300px;
-  min-height: 300px;
-  padding: 5px;
-  display: block;
-  border-radius: 25px;
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  background-color: #80ED99;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /* position the div in center */
   position: absolute;
   top: 50%;
@@ -19,17 +26,23 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.button-style {
-  border-radius: 10px;
-  color: white;
-  background-color: brown;
-  width: 150px;
-  min-height: 50px;
-  font-weight: bold;
-  font-family: 'Poppins';
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #FB7F17;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
-p {
-  color: red;
-  font-family: 'Poppins';
+.img {
+  max-width: 15px;
+  cursor: pointer;
 }
+/*# sourceMappingURL=style.css.map */
