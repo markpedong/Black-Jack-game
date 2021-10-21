@@ -6,18 +6,31 @@ body {
   background-position: center center;
 }
 
+:root {
+  --bg-color: #80ED99;
+  --title-bg: #38A3A5;
+  --content-bg: #57CC99;
+  --button-color: #22577A;
+  --text-color: #000000;
+  --white-text-color: #ffffff;
+}
+
+.dark-theme {
+  --bg-color: #000329;
+  --title-bg: #0400ff;
+  --content-bg: #5a78d8;
+  --button-color: #22577A;
+  --text-color: #000000;
+  --white-text-color: #ffffff;
+}
+
 .container {
   width: 100%;
   height: auto;
   max-width: 350px;
-  background-color: #80ED99;
+  background-color: var(--bg-color);
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  border-radius: 25px;
   /* position the div in center */
   position: absolute;
   top: 50%;
@@ -33,16 +46,86 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  color: #FB7F17;
   padding-top: 10px;
   text-transform: uppercase;
-  font-size: 20px;
+}
+
+.title {
+  background: var(--title-bg);
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: var(--white-text-color);
 }
 
 .img {
-  max-width: 15px;
+  max-width: 18px;
   cursor: pointer;
+  margin-top: 10px;
+  margin-left: 300px;
+  position: absolute;
+}
+
+.content {
+  background: var(--content-bg);
+  margin: 0px 20px 0px 20px;
+  border-radius: 10px;
+  height: auto;
+  min-height: 180px;
+  margin-bottom: 30px;
+}
+
+.content .cards-el {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 15px;
+  font-size: 20px;
+  color: var(--white-text-color);
+}
+
+.content .sum-el {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 0px;
+  font-size: 20px;
+  color: var(--white-text-color);
+}
+
+.content h1 {
+  color: var(--text-color);
+  font-family: 'Poppins';
+  text-align: center;
+  font-weight: 600;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.button-container .button-style {
+  border-radius: 25px;
+  color: var(--white-text-color);
+  background-color: var(--button-color);
+  width: 150px;
+  min-height: 50px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */

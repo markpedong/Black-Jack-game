@@ -78,3 +78,16 @@ console.log(hasBlackJack);
 console.log(isAlive);
 
 // BlackJack
+
+// Dark Theme
+var icon = document.getElementById("icon");
+
+icon.onclick = () => {
+  document.body.classList.toggle("dark-theme")
+  if (document.body.classList.contains("dark-theme")) {
+    icon.src = "./lightmode.svg" 
+  } else {
+    icon.src = "./darkmode.svg"
+  }
+}
+
